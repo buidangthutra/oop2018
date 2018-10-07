@@ -1,6 +1,12 @@
 package week3;
 
 public class Week3Test {
+    
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+import static week3.Week3.calculateBMI;
+import static week3.Week3.max;
+import static week3.Week3.minOfArray;
 
     @Test
     public void testMax() {
