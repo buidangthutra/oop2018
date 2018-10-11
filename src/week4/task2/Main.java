@@ -6,8 +6,8 @@
 package week4.task2;
 
 /**
- *
- * @author Admin
+ *Main
+ * @author Bui Dang Thu Tra
  */
 public class Main {
     public static void main(String[] args) {

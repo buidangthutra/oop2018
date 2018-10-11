@@ -1,27 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package week4.task2;
 
 /**
- *
- * @author Admin
+ *class Square ke thua class Rectangle
+ * @author Thu Tra
  */
 public class Square extends Rectangle{
     
     private double side; 
     
-    public void Square(){
+ /**
+ *ham khoi tao mac dinh Square
+ */
+    public Square(){
         
     }
-    
-    public void Square(double side) {
+ /**
+ *ham khoi tao Square
+ * @param side gia tri cau side
+ */    
+    public Square(double side) {
         this.side = side;
     }
-    
-    public void Square(double side, String col, boolean fill  ){
+ /**
+ *ham khoi tao ham Square
+ * @param side la bien side
+ * @param  col la bien color
+ * @param fill la bien filled
+ */      
+    public Square(double side, String col, boolean fill  ){
         this.side = side;
         super.setColor(col);
         super.setFilled(fill);
@@ -41,7 +48,9 @@ public class Square extends Rectangle{
     public void setLength(double side) {
         super.setLength(side);
     }
-
+/**
+ *ham tra ve thong tin day du cua Square
+ */
     @Override
     public String toString(){
         return "Square - "+"side: "+this.side+ ", "+   "Area: "+this.getArea()
