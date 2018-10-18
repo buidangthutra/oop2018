@@ -13,7 +13,7 @@ public class Shape {
  /**
  *Ham khoi tao gia tri mac dinh Shape
  */   
-    public void shape() {
+    public Shape() {
         
     }
  /**
@@ -22,11 +22,12 @@ public class Shape {
  * @param fill gia tri filled 
  * @param p la bien point
  */    
-   public void Shape(String col, boolean fill,point p) {
+   public Shape(String col, boolean fill,point p) {
         color = col;
         filled = fill;
         point = p;
     }
+  
  /**
  *Ham tra ve gia tri mau
  *@return tra ve gia tri Red
@@ -40,6 +41,14 @@ public class Shape {
  */    
     public void setColor(String col) {
         color = col;
+    }
+    
+    public point getPoint(){
+        return point;
+    }
+    
+    public void setPoint(point p1){
+        this.point = p1;
     }
  /**
  *

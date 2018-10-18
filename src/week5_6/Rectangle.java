@@ -34,11 +34,9 @@ public class Rectangle extends Shape{
  * @param p la bien point
  */      
     public Rectangle(double w,double l, String c, boolean f,point p){
+        super(c,f,p);
         width = w;
         length = l;
-        color = c;
-        filled = f;
-        point = p;
     }
  /**
  *ham tra ve gai tri cho Width
@@ -76,7 +74,7 @@ public class Rectangle extends Shape{
  */
     public boolean sameRectangle(Shape c1){
         Rectangle c2 = (Rectangle)c1;
-        if(c2.getWidth() == this.getWidth() && c2.getLength() == this.getLength())
+        if(c2.getWidth() == this.getWidth() && c2.getLength() == this.getLength() && c2.getPoint() == this.getPoint())
         return true;
         return false;
     }

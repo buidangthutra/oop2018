@@ -36,7 +36,7 @@ public class Hexagon extends Shape {
     public Hexagon(String color, boolean fill,point p){
         super.setColor(color);
         super.setFilled(fill);
-        point = p;
+         point = p;
     }
  /**
  *ham tra ve gia tri ttue false cho hinh giong nhau
@@ -46,7 +46,7 @@ public class Hexagon extends Shape {
  */    
     public boolean sameHexagon(Shape c1){
         Hexagon c2 = (Hexagon)c1;
-        if(c2.getCanh() == this.getCanh())
+        if(c2.getCanh() == this.getCanh()&& c2.getPoint()== this.getPoint())
         return true;
         return false;
     }

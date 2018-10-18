@@ -30,10 +30,9 @@ public class Circle extends Shape{
  * @param  p la bine foint
  */   
     public Circle(double rad, String col, boolean fill ,point p ){
+        super(col,fill,p);
         radius = rad;
-        color = col;
-        filled = fill;
-        point = p;
+        
     }
  /**
  *ham tra ve gai tri cho radiud
@@ -54,7 +53,7 @@ public class Circle extends Shape{
  */  
     public boolean sameCircle(Shape c1){
         Circle c2 = (Circle)c1;
-        if(c2.getRadius() == this.getRadius())
+        if(c2.getRadius() == this.getRadius()&&c2.getPoint().samePoint(this.getPoint()))
         return true;
         return false;
     }

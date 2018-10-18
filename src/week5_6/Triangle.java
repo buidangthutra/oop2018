@@ -3,56 +3,56 @@ package week5_6;
  *class Triangle ke thua shape
  */
 public class Triangle extends Shape{
-    private int a,b,c;
+    private point a,b,c;
 /**
  *lay gia tri cho canh thu 1
- * @return tra ve gia tri cho canh 1
+ * @return tra ve gia tri cho diem a
  */    
-    public int getA(){
+    public point getA(){
         return a;
     }
 /**
  *lay gia tri cho canh thu 1
- * @return tra ve gia tri cho canh 2
+ * @return tra ve gia tri cho diem b
  */    
-    public int getB(){
+    public point getB(){
         return b;
     }
 /**
  *lay gia tri cho canh thu 3
- * @return tra ve gia tri cho canh 3
+ * @return tra ve gia tri cho diem c
  */     
-    public int getC(){
+    public point getC(){
         return c;
     }
 /**
  *gan gia tri cho canh thu 1
- * @param a la bien canh 1
+ * @param a la bien dinh 1
  */  
-    public void setA(int a){
+    public void setA(point a){
         this.a = a;
     }
  /**
  *gan gia tri cho canh thu 2
- * @param b la bien canh 2
+ * @param b la bien dinh 2
  */     
-    public void setB(int b){
+    public void setB(point b){
         this.b = b;
     }
  /**
  *khoi tao tri cho canh thu 3
- * @param c la bien canh 3
+ * @param c la bien dinh 3
  */     
-    public void setC(int c){
+    public void setC(point c){
         this.c = c;
     }
 /**
  *khoi tao tri cac canh cho tam giac
- * @param a la bien canh 1
- * @param b la bien canh 2
- * @param c la bine canh 3
+ * @param a la bien dinh 1
+ * @param b la bien dinh 2
+ * @param c la bine dinh 3
  */      
-    public Triangle(int a, int b, int c){
+    public Triangle(point a, point b, point c){
         this.a=a;
         this.b=b; 
         this.c = c;
@@ -70,9 +70,7 @@ public class Triangle extends Shape{
  * @param p la bien point
  */     
     public Triangle(String color, boolean fill,point p){
-        this.color=color;
-        this.filled=fill;
-        point = p;
+        super(color,fill,p);
 
     }
  /**

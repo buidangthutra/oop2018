@@ -34,6 +34,7 @@ public class Square extends Rectangle{
         this.side = side;
         super.setColor(col);
         super.setFilled(fill);
+        super.setPoint(p);
     }
 /**
  *lay gia tri cho side
