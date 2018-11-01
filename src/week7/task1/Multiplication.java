@@ -26,7 +26,7 @@ public class Multiplication extends BinaryExpression {
 
     @Override
     public String toString() {
-       String a = Integer.toString(this.left.evaluate()+'*'+this.right.evaluate());
+       String a = Integer.toString(this.left.evaluate()+this.right.evaluate());
        return a;
     }
 
@@ -35,9 +35,4 @@ public class Multiplication extends BinaryExpression {
        return this.left.evaluate()*this.right.evaluate();
     }
     
-    
-    public static void main(String[] args) {
-        Multiplication a = new Multiplication(new Numeral(2),new Numeral(3));
-        System.out.println(a.evaluate());
-    }
 }
