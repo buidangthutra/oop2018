@@ -5,7 +5,7 @@ public class Square extends Expression {
 
     @Override
     public String toString() {
-         String a = Integer.toString(expression.evaluate()+'^'+'2');
+         String a = Integer.toString(expression.evaluate());
          return a;
     }
 
