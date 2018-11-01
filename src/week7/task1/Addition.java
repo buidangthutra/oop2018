@@ -17,7 +17,7 @@ public class Addition extends BinaryExpression {
 
     @Override
     public String toString() {
-       String a = Integer.toString(left.evaluate()+'+'+right.evaluate());
+       String a = Integer.toString(left.evaluate()+right.evaluate());
        return a;
     }
 
