@@ -29,14 +29,44 @@ public class Task1 {
          return a;
      }
      
+      public String findFunctionByName(String Name) throws IOException{
+        String path = "D:\\Learning\\Java\\oop2018\\src\\week9\\Utils.java";
+	List<String> a = getAllFunction(path);
+        
+        String c=null;
+        
+        for(int i=0; i<a.size();i++){
+            String b = a.get(i);
+            b = b.substring(4);
+            b = b.replaceAll(" path","");
+            b = b.replaceAll(" folderPath", "");
+            b = b.replaceAll(" fileName","");
+            b= b.replace("{", "");
+            
+//            System.out.println(b);
+            if(Name.equals(b)) c = b;
+        }
+        
+        return c;
+     }
+     
      public static void main(String[] args) {
         Task1 a = new Task1();
          try {
-             System.out.println(a.getAllFunction("D:\\Learning\\Java\\Week5\\src\\oask1.java"));
+             List<String> b = new ArrayList<String>();
+             b = a.getAllFunction("D:\\Learning\\Java\\oop2018\\src\\week9\\Utils.java");
+             
+             for(int i=0; i<b.size();i++){
+                 System.out.println(b.get(i));
+             }
+             System.out.println("");
+             System.out.println(a.findFunctionByName("public static void writeContentToFile(String)"));
+             
          } catch (IOException ex) {
              System.out.println("Erro!");
          }
         
     }
 }
+
 
