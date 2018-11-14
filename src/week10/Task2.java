@@ -1,14 +1,16 @@
 package week10;
 
+import java.util.Random;
+
 public class Task2 {
   public static void main(String[] args)  {
         int value = 1000;
-        int[] arr = new int[value];
+        double[] arr = new double[value];
         try{
         
         for(int i=0; i< value; i++){
             Random rd = new Random();
-            int a =1+ rd.nextInt(500);
+            double a =200 + (rd.nextDouble()*100);
             arr[i] = a;
         }
         
@@ -19,7 +21,7 @@ public class Task2 {
         for(int i=0; i<value-1;i++){
             for(int j=0; j < value-1 ; j++){
                 if(arr[j] > arr[j+1]){
-                    int b = arr[j];
+                    double b = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = b;
                 }
